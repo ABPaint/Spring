@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+
+
+
+
+<!--    <bean id="Identification" class="org.genspark.Student">-->
+<!--        <constructor-arg index="0" value="123"/>-->
+<!--        <constructor-arg index="1" value="Pradeep"/>-->
+<!--        <constructor-arg index="2" ref="Address"/>-->
+<!--        <constructor-arg index="3" ref="Phone"/>-->
+<!--  -->
+<!--        -->
+<!--        -->
+<!--    </bean>-->
+
+    <bean id="Student" class="org.genspark.Student">
+        <constructor-arg index="0" value="548614"/>
+        <constructor-arg index="1" value="John"/>
+        <constructor-arg index="2" value="9988887" />
+        <constructor-arg index="3" ref="Address"/>
+    </bean>
+
+<!--    <bean id="Phone" class="org.genspark.Phone">-->
+<!--        <constructor-arg index="0">-->
+<!--        <list>-->
+<!--            <value>9999900</value>-->
+<!--            <value>8888878</value>-->
+<!--            <value>9787988</value>-->
+<!--        </list>-->
+<!--        </constructor-arg>-->
+<!--    </bean>-->
+
+    
+    <bean id="Address" class="org.genspark.Address">
+        <constructor-arg index="0"  value="Atlanta"/>
+        <constructor-arg index="1"  value="Georgia"/>
+        <constructor-arg index="2"  value="United States"/>
+        <constructor-arg index="3"  value="32054"/>
+    </bean>
+
+</beans>

@@ -5,10 +5,10 @@ import java.util.List;
 public class Student implements Identification {
     private int iD;
     private String name;
-    private String ph;
+    private List<String> ph;
     private Address add;
 
-    public Student(int iD, String name, String ph, Address add) {
+    public Student(int iD, String name, List<String> ph, Address add) {
         this.iD = iD;
         this.name = name;
         this.ph = ph;
